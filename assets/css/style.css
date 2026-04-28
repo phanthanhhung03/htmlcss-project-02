@@ -426,8 +426,15 @@ li {
     padding: 96px 0;
 }
 
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
 .feedback-item {
     display: flex;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .feedback-item .avatar {
@@ -485,4 +492,57 @@ li {
     font-style: italic;
     font-weight: 400;
     line-height: 1.54; /* 153.846% */
+}
+
+/* Feature */
+.features {
+    margin-top: 135px;
+    padding: 65px 0;
+    height: 511px;
+    display: flex;
+}
+
+.features .body {
+    display: flex;
+    justify-content: space-between;
+    /* align-items:  center; */
+}
+
+.features .images {
+    display: flex;
+    gap: 0 30px;
+}
+
+.features .images img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 1.6rem;
+}
+
+.features .lower {
+    margin-top: 34px;
+}
+
+.features .content {
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.features .content .desc {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    color: #5f5b53;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.features .content .cta-btn {
+    margin-top: 32px;
+    min-width: 137px;
+    color: #fff;
+    background: var(--primary-color);
 }
