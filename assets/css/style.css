@@ -590,10 +590,12 @@ li {
     margin-top: 55px;
     display: flex;
     gap: 30px;
+    overflow: hidden;
 }
 
 .blog .blog-list .item {
-    width: 33.33%;
+    width: calc(100% / 3 - 20px);
+    flex-shrink: 0;
     border-radius: 16px;
     background: #fff;
 }
@@ -656,6 +658,30 @@ li {
     line-height: 1.75; /* 175% */
 }
 
+.blog .item .btn {
+    font-size: 1.4rem;
+}
+
 .blog .item .btn:hover {
     background-color: var(--primary-color);
+}
+
+.blog .dots {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.blog .dots .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #5f5b53;
+    cursor: pointer;
+}
+
+.blog .dots .dot.active {
+    background: var(--primary-color);
+    cursor: default;
 }
